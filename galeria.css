@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    background:#0d1117;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    height:90px;
+    display:flex;
+    align-items:center;
+    padding:0 30px;
+    background:rgba(0,0,0,.70);
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+#logoCarrera{
+    width:100px;
+    margin-left:900px;
+    margin-right:20px;
+}
+.volver{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+.volver:hover{
+    color:#ffb44d;
+}
+h1{
+    margin:0;
+}
+main{
+    width:90%;
+    margin:auto;
+}
+h2{
+    text-align:center;
+    margin:40px 0;
+    color:#ffb44d;
+    font-size:36px;
+}
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.galeria img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.35s;
+    box-shadow:0 0 20px rgba(0,0,0,.45);
+}
+
+.galeria img:hover{
+    transform:scale(1.04);
+    box-shadow:0 0 30px rgba(255,180,77,.35);
+}
+
+.creditos{
+    margin:50px auto;
+    width:70%;
+    text-align:center;
+    color:#c8c8c8;
+    line-height:1.7;
+    font-size:15px;
+
+}

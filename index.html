@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrera Ing. Informática UNSXX</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.178.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.178.0/examples/jsm/"
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<script type="module" src="script.js"></script>
+<div id="barraSuperior">
+
+    <div class="ladoIzquierdo">
+        <img src="Imágenes/escudoCarrera.png" id="logoCarrera">
+        <div class="textoCarrera">
+            <span class="tituloCarrera">
+                INGENIERÍA INFORMÁTICA
+            </span>
+            <span class="subtituloCarrera">
+                4 de Julio SALUD!
+            </span>
+        </div>
+    </div>
+    <div class="menuSuperior">
+        <a href="historia.html" class="btnMenuSuperior">HISTORIA</a>
+        <a href="galeria.html">GALERÍA</a>
+        <a href="ubicacion.html">UBICACIÓN</a>
+
+    </div>
+    <div class="ladoDerecho">
+        <div class="textoUniversidad">
+            <span class="tituloUniversidad">
+                UNIVERSIDAD NACIONAL
+            </span>
+            <span class="subtituloUniversidad">
+                SIGLO XX
+            </span>
+        </div>
+        <img src="Imágenes/logoUNSXX.png" id="logoUniversidad">
+    </div>
+
+</div>
+<div id="menuInferior">
+
+    <div class="ladoIzquierdo">
+        <button id="btnDia" class="btnTiempo">☼ Día</button>
+        <button id="btnAtardecer" class="btnTiempo">☀︎ Atardecer</button>
+        <button id="btnNoche" class="btnTiempo">☾ Noche</button>
+    </div>
+
+    <div class="centroMenu">
+        <button id="btnExplorar" class="btnExplorar">
+            ☸ Explorar Campus
+        </button>
+    </div>
+
+    <div class="ladoDerecho">
+
+    </div>
+
+</div>
+<div id="panelBienvenida">
+
+    <span class="bienvenida">
+        BIENVENIDO
+    </span>
+
+    <h1>
+        EXPLORA NUESTRA<br>
+        FACULTAD EN 3D
+    </h1>
+
+    <p>
+        Recorre el campus universitario de Ingeniería Informática,
+        conoce sus instalaciones y descubre cada uno de sus espacios
+        mediante una experiencia interactiva en tres dimensiones.
+    </p>
+
+</div>
+
+<div id="mensajeExplorador">
+    Para salir del modo explorador presione ESC
+</div>
+<div id="mensajeControles">
+    <h3>🧭 Modo Explorador</h3>
+    <p>⌨ <b>W A S D</b> para moverte</p>
+    <p>🖱 Mueve el mouse para mirar</p>
+    <p>⬆ <b>Q</b> subir &nbsp;&nbsp; ⬇ <b>E</b> bajar</p>
+    <p>⎋ <b>ESC</b> volver al menú</p>
+</div>
+</body>
+</html>

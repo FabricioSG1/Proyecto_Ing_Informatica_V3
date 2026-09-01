@@ -1,0 +1,65 @@
+body{
+    margin:0;
+    background:#0d1117;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    height:90px;
+    display:flex;
+    align-items:center;
+    padding:0 30px;
+    background:rgba(0,0,0,.70);
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+#logoCarrera{
+    width:100px;
+    margin-left:1000px;
+    margin-right:20px;
+}
+.volver{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+.volver:hover{
+    color:#ffb44d;
+}
+h1{
+    margin:0;
+}
+main{
+    width:85%;
+    margin:40px auto;
+}
+h2{
+    text-align:center;
+    color:#ffb44d;
+    margin-bottom:35px;
+}
+.mapa iframe{
+    width:100%;
+    height:500px;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 0 25px rgba(0,0,0,.45);
+}
+.informacion{
+    margin-top:40px;
+    text-align:center;
+    line-height:1.8;
+}
+.btnMapa{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 28px;
+    background:#ffb44d;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+.btnMapa:hover{
+    transform:scale(1.05);
+}

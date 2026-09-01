@@ -1,0 +1,86 @@
+body{
+    margin:0;
+    background:#0f172a;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    height:90px;
+    background:rgba(40, 45, 95, 0.7);
+    display:flex;
+    align-items:center;
+    padding:0 30px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+#logoCarrera{
+    width:100px;
+    margin-left:700px;
+    margin-right:20px;
+}
+h1{
+    font-size:30px;
+    margin:0;
+}
+.volver{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.25s;
+}
+.volver:hover{
+    color:#ffb44d;
+}
+main{
+    display:flex;
+    height:calc(100vh - 90px);
+}
+/* IZQUIERDA */
+.panelIzquierdo{
+    width:32%;
+    overflow-y:auto;
+    background:#10151d;
+    padding:25px;
+}
+.fotoHistoria{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+/* DERECHA */
+.panelDerecho{
+    width:68%;
+    overflow-y:auto;
+    padding:45px;
+}
+.panelDerecho h2{
+    font-size:36px;
+    margin-top:0;
+    color:#ffb44d;
+}
+.panelDerecho p{
+    text-align:justify;
+    font-size:18px;
+    line-height:1.9;
+}
+.panelDerecho h3{
+    margin-top:50px;
+    color:#ffd27a;
+}
+/* TIMELINE */
+.timeline{
+    border-left:4px solid #ffb44d;
+    margin-top:30px;
+    padding-left:30px;
+}
+.evento{
+    margin-bottom:40px;
+}
+.evento span{
+    font-size:22px;
+    font-weight:bold;
+    color:#ffb44d;
+}
+.evento p{
+    margin-top:10px;
+}

@@ -1,0 +1,242 @@
+body{
+    margin:0;
+    overflow:hidden;
+}
+canvas{
+    display:block;
+}
+#coords{
+    position:absolute;
+    top:10px;
+    left:10px;
+    color:white;
+    background:rgba(0,0,0,.5);
+    padding:10px;
+    font-family:monospace;
+    font-size:15px;
+}
+#menuInferior{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,.55);
+    backdrop-filter: blur(10px);
+    border-top:1px solid rgba(255,255,255,.15);
+    display:flex;
+    justify-content:space-between;
+
+    padding:0 25px;
+    box-sizing:border-box;
+
+    z-index:100;
+    transition:transform .3s ease;
+}
+.btnTiempo{
+    background:transparent;
+    color:white;
+    border:none;
+    font-size:18px;
+    margin-right:20px;
+    padding:10px 18px;
+    cursor:pointer;
+    border-radius:10px;
+    transition:.25s;
+}
+.btnTiempo:hover{
+    background:rgba(255,255,255,.15);
+    transform:translateY(-2px);
+}
+#barraSuperior{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 45   px;
+    z-index: 1000;
+    transition:transform .3s ease;
+    font-family:'Outfit',sans-serif;
+}
+.btnExplorar{
+    margin: 10px;
+    background:rgba(255,255,255,.15);
+    color:white;
+    border:none;
+    padding:10px 28px;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.25s;
+    font-weight:monospace;
+}
+.btnExplorar:hover{
+    background:#ffac4d;
+    transform:scale(1.05);
+}
+.ocultarSuperior{
+    transform:translateY(-100%);
+}
+.ocultarInferior{
+    transform:translateY(100%);
+}/*#mensajeExplorador{
+
+    position:fixed;
+    bottom:100px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(0,0,0,.75);
+    color:white;
+    padding:14px 24px;
+    border-radius:12px;
+    font-size:18px;
+    font-family:monospace;
+    opacity:0;
+    transition:opacity .5s;
+    pointer-events:none;
+    z-index:5000;
+}*/
+#mensajeControles{
+    position:fixed;
+    left:35px;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,.65);
+    backdrop-filter:blur(8px);
+    color:white;
+    padding:20px 26px;
+    border-radius:14px;
+    width:260px;
+    opacity:0;
+    transition:opacity .5s;
+    pointer-events:none;
+    z-index:5000;
+    font-family:Arial;
+}
+#mensajeControles h3{
+    margin-top:0;
+    margin-bottom:15px;
+    color:#ffb45a;
+}
+#mensajeControles p{
+    margin:8px 0;
+    font-size:16px;
+}
+#logoCarrera{
+    height:100px;
+    width:130px;
+}
+#logoUniversidad{
+    height:100px;
+    width:90px;
+    margin-right:50px;
+}
+.ladoIzquierdo{
+    display:flex;
+    align-items:center;
+}
+.ladoDerecho{
+    display:flex;
+    align-items:center;
+}
+.textoCarrera,
+.textoUniversidad{
+    display:flex;
+    flex-direction:column;
+}
+.textoCarrera{
+    margin-left:15px;
+}
+.textoUniversidad{
+    margin-right:15px;
+    text-align:right;
+}
+.tituloCarrera,
+.tituloUniversidad{
+    color:white;
+    font-size:20px;
+    font-weight:Arial;
+}
+
+.subtituloCarrera,
+.subtituloUniversidad{
+    color:#d0d0d0;
+    font-size:14px;
+}
+.menuSuperior{
+    display:flex;
+    gap:45px;
+}
+.menuSuperior a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:.25s;
+}
+.menuSuperior a:hover{
+    color:#ffac4d;
+}
+.ladoIzquierdo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.centroMenu{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+.ladoDerecho{
+    width:400px;
+}
+#panelBienvenida{
+    position:fixed;
+    top:50%;
+    right:70px;
+    transform:translateY(-50%);
+    width:300px;
+    padding:35px;
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:18px;
+    color:white;
+    z-index:900;
+    transition:all .7s ease;
+
+}
+#panelBienvenida .bienvenida{
+    color:#ffb44d;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:3px;
+
+}
+#panelBienvenida h1{
+    margin-top:12px;
+    margin-bottom:20px;
+    font-size:30px;
+    line-height:1.15;
+    font-family:'Outfit',sans-serif;
+}
+#panelBienvenida p{
+    color:#dddddd;
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+}
+.ocultarPanel{
+    opacity:0;
+    transform:translate(120px,-50%);
+    pointer-events:none;
+
+}
