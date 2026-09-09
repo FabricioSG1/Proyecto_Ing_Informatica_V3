@@ -6,6 +6,7 @@ import { cargarPizarrasYPupitres } from "./PizarrasYPupitres.js";
 import { cargarMesasPCs } from "./MesasPCs.js";
 import { cargarPCs } from "./PCs.js";
 import { cargarMonitores } from "./Monitores.js";
+const pantallaCarga = document.getElementById("pantallaCarga");
 const scene = new THREE.Scene();
 cargarPizarrasYPupitres(scene);
 cargarPersonaje(scene);
@@ -294,6 +295,10 @@ loader.load(
     }
 });
 console.log("Escena Oficial cargado correctamente");
+pantallaCarga.style.opacity = "0";
+setTimeout(() => {
+    pantallaCarga.style.display = "none";
+}, 500);
 const edificio1 = escenario.getObjectByName("Edificio 1");
 const edificio2 = escenario.getObjectByName("Edificio 2");
 
