@@ -6,6 +6,7 @@ import { cargarPizarrasYPupitres } from "./PizarrasYPupitres.js";
 import { cargarMesasPCs } from "./MesasPCs.js";
 import { cargarPCs } from "./PCs.js";
 import { cargarMonitores } from "./Monitores.js";
+const pantallaCarga = document.getElementById("pantallaCarga");
 const scene = new THREE.Scene();
 cargarPizarrasYPupitres(scene);
 cargarPersonaje(scene);
@@ -289,22 +290,16 @@ loader.load(
         scene.add(escenario);
         escenario.traverse((obj) => {
     if (obj.isMesh) {
-        // Todos los objetos generan y reciben sombras
         obj.castShadow = true;
         obj.receiveShadow = true;
-        // Solo las hojas tendrán animación
-        if (obj.name.startsWith("Hoja")) {
-            hojas.push({
-
-                mesh: obj,
-                offset: Math.random() * Math.PI * 2,
-                baseX: obj.rotation.x,
-                baseY: obj.rotation.y,
-                baseZ: obj.rotation.z
-            });
-        }
     }
 });
+console.log("Escena Oficial cargado correctamente");
+pantallaCarga.style.opacity = "0";
+
+setTimeout(() => {
+    pantallaCarga.style.display = "none";
+}, 500);
 const edificio1 = escenario.getObjectByName("Edificio 1");
 const edificio2 = escenario.getObjectByName("Edificio 2");
 
