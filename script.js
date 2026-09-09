@@ -292,19 +292,9 @@ loader.load(
         // Todos los objetos generan y reciben sombras
         obj.castShadow = true;
         obj.receiveShadow = true;
-        // Solo las hojas tendrán animación
-        if (obj.name.startsWith("Hoja")) {
-            hojas.push({
-
-                mesh: obj,
-                offset: Math.random() * Math.PI * 2,
-                baseX: obj.rotation.x,
-                baseY: obj.rotation.y,
-                baseZ: obj.rotation.z
-            });
-        }
     }
 });
+console.log("Escena Oficial cargado correctamente");
 const edificio1 = escenario.getObjectByName("Edificio 1");
 const edificio2 = escenario.getObjectByName("Edificio 2");
 
