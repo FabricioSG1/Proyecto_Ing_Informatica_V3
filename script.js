@@ -289,7 +289,6 @@ loader.load(
         scene.add(escenario);
         escenario.traverse((obj) => {
     if (obj.isMesh) {
-        // Todos los objetos generan y reciben sombras
         obj.castShadow = true;
         obj.receiveShadow = true;
     }
